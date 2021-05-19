@@ -7,56 +7,64 @@
 
     </head>
     <body>
-        <h1>Evaluation du site web amazon.ca</h1>
+        <h1 id="titre">Evaluation de l'interface usager du site web amazon.ca</h1>
         <a href="https://www.amazon.ca" target="blank"><p>Veuillez Cliquer ici pour visiter l'interface usager qu'on va évaluer </p></a>
         
         <p>Voici un aperçu du site web en question<br><br><br>
-            <a href="https://www.amazon.ca" alt="siteweb d'amazon">
+            <a href="https://www.amazon.ca" target="blank"alt="siteweb d'amazon">
                 <img src="C:\Users\audry\OneDrive\Bureau\SEG3525\Activity2_Questionnaire website\audry300.github.io\images\amazon.JPG"  width="1500" height="700">
             </a>
 
         </p>
         <br><br><br>
 
-        <form name="Questionnaire">
-            A votre avis, l'UI fonctionne-t-il correctement?<br>
-            <input type="text" name="answer1"><br><br><br><br>
-
-            Diriez-vous que l'UI est cohérent et se comporte de la même façon, indépendamment de l'appreil depuis lequel on accède au siteweb?<br>
-            <input type="radio" name="coherence" value="Cohérent">
-            <label for="Cohérent">Cohérent</label><br>
-            <input type="radio" name="coherence" value="Incohérent">
-            <label for="Incohérent">Incohérent</label><br>
-
-            Quel est le niveau de difficulté d'utilisation de l'UI?
-            <select name="niveau">
-                <option value="facile">facile</option>
-                <option value="moyen">moyen</option>
-                <option value= "difficile">difficile</option>
-            </select>
-
-            <p>Parmi les critères d'évaluation des interfaces usagers,lesquels suggérerez-vous aux développeurs pour améliorer le siteweb en question?</p>
-            <select name="ameliorations" multiple>
-                <option value="fonctionnement">Fonctionnement</option>
-                <option value="Cohérence">Cohérence</option>
-                <option value="Efficacité">Efficacité</option>
-                <option value="Utilisabilité">Utilisabilité</option>
-                <option value="Fiabilité">Fiabilité</option>
-                <option value="Securité et integrité des données">Securité et integrité des données</option>
-            </select>
-
-            
-            <p>Aimeriez-vous laisser un commentaire:?</p><br>
-                <textarea cols="100" rows="5"></textarea><br>
-
-            <input type="submit" value="Soumettre le questionnaire"/>
-            
-            
-
-            
-
-
-        </form>
+        <div id="form">
+            <form name="Questionnaire">
+                <div class="questions">
+                    A votre avis, l'interface usager fonctionne-t-il correctement?<br>
+                    <input type="text" name="answer1"><br>
+                </div>
+    
+                <div class="questions">
+                    Diriez-vous que l'interface usager est cohérent et se comporte de la même façon, indépendamment de l'appreil depuis lequel on accède au siteweb?<br>
+                    <input type="radio" name="coherence" value="Cohérent">
+                    <label for="Cohérent">Cohérent</label><br>
+                    <input type="radio" name="coherence" value="Incohérent">
+                    <label for="Incohérent">Incohérent</label><br>
+                </div>
+    
+                <div class="questions">
+                    Quel est le niveau de difficulté d'utilisation de l'interface usager?
+                    <select name="niveau">
+                        <option value="facile">facile</option>
+                        <option value="moyen">moyen</option>
+                        <option value= "difficile">difficile</option>
+                    </select>
+                </div>
+    
+                <div class="questions">
+                    <p>Parmi les critères d'évaluation des interfaces usagers,lesquels suggérerez-vous aux développeurs pour améliorer le siteweb en question?</p>
+                    <select name="ameliorations" multiple>
+                        <option value="fonctionnement">Fonctionnement</option>
+                        <option value="Cohérence">Cohérence</option>
+                        <option value="Efficacité">Efficacité</option>
+                        <option value="Utilisabilité">Utilisabilité</option>
+                        <option value="Fiabilité">Fiabilité</option>
+                        <option value="Securité et integrité des données">Securité et integrité des données</option>
+                    </select>
+                </div>
+    
+                
+                <div class="questions">
+                    <p>Aimeriez-vous laisser un commentaire:?</p><br>
+                    <textarea cols="100" rows="5"></textarea><br>
+                </div>
+    
+                <input type="submit" value="Soumettre le questionnaire"/>
+                
+            </form>
+        </div>
+        <p id="feet">Développé par Audry300</p>
        
 
 

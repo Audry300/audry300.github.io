@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    background-color: aqua;
+    height: 100;
+    width: 100%;
+}
+
+#form{background-color: azure;}
+
+#feet{text-align: right;}
+
+html,body{line-height: 1cm;}
+
+
+.questions{
+    border-radius: 100px;
+    border: 10px black;
+
+}
