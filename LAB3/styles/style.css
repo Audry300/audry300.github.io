@@ -53,7 +53,7 @@
   color: rgb(66, 68, 68) ;
 }
 html{
-  background-image: url("github.com/Audry300/audry300.github.io/tree/main/LAB3/styles/Captur.JPG");
+  background-image: url(Captur.JPG);
   background-size: cover;
   background-repeat: no-repeat; 
   font-size: larger;
