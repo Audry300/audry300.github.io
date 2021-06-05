@@ -53,7 +53,7 @@
   color: rgb(66, 68, 68) ;
 }
 html{
-  background-image: url(Captur.JPG);
+  background-image: url('Captur.JPG');
   background-size: cover;
   background-repeat: no-repeat; 
   font-size: larger;
@@ -63,7 +63,7 @@ html{
   display: flex;
   border-radius: 10px;
   background-color: rgb(214, 114, 89);
-  justify-content: right
+  justify-content: right;
   align-items: center;
 
   
