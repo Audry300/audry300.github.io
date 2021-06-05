@@ -1,0 +1,88 @@
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color:inherit;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color:inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/* Style the name of the grocery store*/
+#titre{
+  text-align: left;
+  
+  color: rgb(143, 148, 148) ;
+  height: 2cm;
+  font-size: 60px;
+  padding-left: 2cm;
+}
+/*Styling the footer */
+#foot{
+  position:fixed;
+  bottom: 0;
+  right: 1cm;
+  text-align: right;
+  color: rgb(66, 68, 68) ;
+}
+html{
+  background-image: url("Captur.JPG");
+  background-size: cover;
+  background-repeat: no-repeat; 
+  font-size: larger;
+
+} 
+.nextClass{
+  display: flex;
+  border-radius: 10px;
+  background-color: rgb(214, 114, 89);
+  justify-content: right
+  align-items: center;
+
+  
+}
+.previousButton{
+  display: flex;
+  border-radius: 10px;
+  background-color: rgb(214, 114, 89);
+  justify-content: left;
+  align-items: center;
+
+}
+#addCart{
+  border-radius: 10px;
+  background-color: rgb(124, 133, 133);
+
+}
+#confirm{
+  border-radius: 10px;
+  background-color: rgb(124, 133, 133);
+
+}

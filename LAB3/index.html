@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <h1 id="titre"><i>m a x i</i></h1>
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+  <button class="tablinks" onClick="openInfo(event, 'Delivery')">Delivery</button>
+</div>
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <h3>Client Information</h3>
+  <p>Please apply  a filter/preference you would like.If there is none,Select "None".</p>
+	Choose a filter:
+
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	<option value=""></option>
+	<option value="lactoseFree">lactoseFree</option>
+    <option value="nutsFree">nutsFree</option>
+    <option value="Organic">Organic</option>
+    <option value="onsale">On Sale</option>
+    <option value="None">None</option>
+	</select><br>
+  <pre>                         </pre>
+  <button class="tablinks nextClass" onclick="openInfo(event,'Products')">next ></button>
+</div>
+
+<div id="Products" class="tabcontent">
+  <h3>Your targeted products</h3>
+  <p>We preselected products based on your restrictions.</p>
+	 Choose items to buy:
+	 <div id="displayProduct"></div>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add selected items to cart.
+	</button>
+  <br>
+  <button class="tablinks previousButton" onclick="openInfo(event,'Client')"> < previous </button>
+  <pre>                         </pre>
+  <button class="tablinks nextClass" onclick="openInfo(event,'Cart')">next ></button>
+
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <p>Here is your cart.</p>
+  <div id="displayCart"></div><br>
+  <button class="tablinks previousButton" onclick="openInfo(event,'Products')"> < previous</button>
+  <p>                         </p>
+  <button class="tablinks nextClass" onclick="openInfo(event,'Delivery')">next ></button>
+
+</div>
+
+<div id="Delivery" class="tabcontent">
+  <h3>Delivery</h3>
+  <p>If you would like your groceries to be delivered,please provide your adress and contact informations</p>
+  <form name="Contact">
+    First name:<input type="text" name="Firstname"><br>
+    Last name:<input type="text" name="LastName"><br>
+    Phone number:<input type="text"><br>
+    Street number:<input type="text" name="Sreetline"><br>
+    Street name:<input type="text" name="Streetname"></br>
+    City:<input type="text" name="City"><br>
+    Province:<input type="text" name="province"><br>
+
+  </form>
+  <button id="confirm">Confirm details</button><br><br><br>
+  <button class="tablinks previousButton" onclick="openInfo(event,'Cart')"> < previous</button>
+  <div id="displayAdress"></div>
+
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+<p id="foot"><i>Designed by audry300</i></p>
+
+</body>
+</html>
