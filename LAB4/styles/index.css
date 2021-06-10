@@ -1,0 +1,27 @@
+#header{text-align: center;
+        
+}
+#adress{
+    width:3cm;
+    height: 3cm;
+}
+html,body{
+    background-color: rgba(235, 243, 242, 0.884);
+    background: url(../images/home1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+p{
+    font-size: 25px; 
+    padding-left: 1.5rem;
+}
+#check{
+    font-size: 25px; 
+
+}
+.back{
+    background-color: rgba(235, 243, 242, 0.884);
+}
+
