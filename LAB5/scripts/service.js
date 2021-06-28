@@ -41,7 +41,7 @@ const setDateFormat = "mm/dd/yy";
 
 function disableDates(date) {
     // Sunday is Day 0, disable all Sundays
-    if (date.getDay() === 0 || date.getDay()===7){
+    if (date.getDay() === 0 || date.getDay()===6){
         return [false];
         
     }
