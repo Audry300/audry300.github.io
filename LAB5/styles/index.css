@@ -11,6 +11,7 @@ html,body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
 
 }
 p{
@@ -28,4 +29,5 @@ p{
 .error{
     text-decoration:line-through ;
 }
+
 

@@ -10,13 +10,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link href="styles/index.css" rel="stylesheet">
 
-        <!--My own script with various functions-->
-        <script src="scripts/service.js"></script>
 
-        <!--Jquery-->
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        
 
         <title>The Rideau animal clinic</title>
     </head>
@@ -24,41 +21,71 @@
     <body>
         <div class = "container-fluid overflow-hidden">
             <div id="page1">
-                <nav class="navbar bg-dark text-white p-3 my-3 ">
-                    <h1><img src="images/logo.jpg" width="50" height="50"> The animal clinic</h1>
-                    <a href=#page1>Home</a>
-                    <a href="#page2">Services</a>
-                    <a href="#page3">Staff</a>
-                    <a href="#page4">Appointment</a>
+                <nav  class="navbar navbar-expand-lg navbar-light bg-secondary  p-3 my-3 ">
+                    <a class="navbar-brand" href=#><h1><img src="images/logo.jpg" width="50" height="50"> The Rideau animal clinic</h1></a>
 
-                </nav>
-                <div class="row gy-5">
-                    <div class="col">
-                        <h2>About us</h2>
-                        <p style="font-size: 25px; padding-left: 1.5rem">Welcome to The animal clinic</p>
-                        <p style="font-size: 25px; padding-left: 1.5rem"> We are a veterinary clinic located downtown in Ottawa,<br> steps away from the Parliament</p>
+                    <!-- Code use to do this navBar is at https://getbootstrap.com/docs/4.0/components/navbar/ -->
+
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div style="font-size: 25px; padding-left: 1.5rem">
+                            <ul class="navbar-nav mr-auto">
+                                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#page1"><img src="logo/home.png" alt="logo" style="width:30px;">Home</a>
+                                </li>
+    
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#page2"><img src="logo/services.png" alt="logo" style="width:30px;">Services</a>
+                                </li>
+    
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#page3"><img src="logo/staff.png" alt="logo" style="width:30px;">Staff</a>
+                                </li>
+    
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#page4"><img src="logo/appointment.png" alt="logo" style="width:30px;">Appointment</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+
                     
-                </div>  
-                <div class="row gy-10">
-                    <div class="col">
-                        <h2>Address</h2>
-                        <p style="font-size: 25px; padding-left: 1.5rem"> 50 rideau Street,<br>Ottawa,Ontario K1N 0T1</p>
-
+                    
+                </nav>
+                <div class="back" style="width:13cm">
+                    <div class="row gy-5">
+                        <div class="col">
+                            <h2>About us</h2>
+                            <p style="font-size: 25px; padding-left: 1.5rem">Welcome to The animal clinic</p>
+                            <p style="font-size: 25px; padding-left: 1.5rem"> We are a veterinary clinic located downtown in Ottawa,<br> steps away from the Parliament</p>
+                        </div>
+                        
+                    </div>  
+                    <div class="row gy-10">
+                        <div class="col">
+                            <h2>Address</h2>
+                            <p style="font-size: 25px; padding-left: 1.5rem"> 50 rideau Street,<br>Ottawa,Ontario K1N 0T1</p>
+    
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col">
+                            <h2>Hours of operations</h2>
+                            <p style="font-size: 25px; padding-left: 1.5rem">We are open Monday to Friday <br> from 8 am to 6pm</p>
+    
+                        </div>
                     </div>
-                </div> 
-                <div class="row">
-                    <div class="col">
-                        <h2>Hours of operations</h2>
-                        <p style="font-size: 25px; padding-left: 1.5rem">We are open Monday to Friday <br> from 8 am to 6pm</p>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <h2>Contact</h2>
-                        <p style="font-size: 25px; padding-left: 1.5rem">We can be reached at 613 209 5234<br></p>
-
+                    <div class="row">
+                        <div class="col">
+                            <h2>Contact</h2>
+                            <p style="font-size: 25px; padding-left: 1.5rem">We can be reached at 613 209 5234<br></p>
+    
+                        </div>
                     </div>
                 </div>
                 
@@ -141,7 +168,7 @@
 
             <div id="page4">
                 <div class="row">
-                    <div class="col">
+                    <div class="col back" style="height:10cm;">
                         <h2 style="text-align: center;">Visit us Today</h2>
                         <p>Did you know that a complete physical examination is recommended once a year to keep your cats and dogs in the best of health? Contact us today to schedule an appointment!</p>
                     </div>
@@ -164,13 +191,13 @@
                             </div>
 
                             <div class="form-floating mb-3">
-                                <input type="Phone" class="form-control" id="floatingNumber" placeholder="Phone">
-                                <label for="floatingNumber">Phone number (xxx-xxxx-xxxx)</label>
+                                <input type="Phone" class="form-control" id="floatingNumber" placeholder="Phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                <label for="floatingNumber">Phone number</label>
                             </div>
 
                             <div class="form-floating mb-3">
-                                <input type="credit" class="form-control" id="floatingCard" placeholder="Credit card (xxxx-xxxx-xxxx-xxxx)" title="A 50$ fee will be charged in case of a cancellation without a 48h notice">
-                                <label for="floatingCard">Credit card (xxxx-xxxx-xxxx-xxxx)</label>
+                                <input type="credit" class="form-control" id="floatingCard" placeholder="Credit Card" title="A 50$ fee will be charged in case of a cancellation without a 48h notice">
+                                <label for="floatingCard">Credit card</label>
                             </div>
 
                             <h3>Select one or more services:</h3><br>
@@ -203,7 +230,7 @@
                             min="2021-06-13T00:00" max="2021-12-31T00:00"><br><br> -->
 
 
-                            <button type="button" class="btn btn-success">Submit</button>
+                            <button id="final" type="button" class="btn btn-success">Submit</button>
 
 
 
@@ -218,7 +245,13 @@
         
         </div>
         
-        
+    <!--My own script with various functions-->
+    <script src="scripts/service.js"></script>
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css"> 
 
     </body>
 </html>
